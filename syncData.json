@@ -191,7 +191,7 @@
             "uid": "TMYKpd07k"
           },
           "exemplar": false,
-          "expr": "(beacon_current_epoch - beacon_finalized_epoch) / increase(beacon_finalized_epoch[$__rate_interval]) / 60",
+          "expr": "((beacon_current_epoch - beacon_finalized_epoch) / rate(beacon_finalized_epoch[$__rate_interval])) / 3600",
           "instant": true,
           "interval": "",
           "intervalFactor": 1,
