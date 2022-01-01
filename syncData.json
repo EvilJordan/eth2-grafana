@@ -23,7 +23,6 @@
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
   "id": 2,
-  "iteration": 1640978973069,
   "links": [],
   "liveNow": true,
   "panels": [
@@ -608,7 +607,7 @@
           },
           "folderName": "General",
           "folderUid": "",
-          "updated": "2021-12-31T19:26:13Z",
+          "updated": "2022-01-01T00:25:59Z",
           "updatedBy": {
             "avatarUrl": "/avatar/46d229b033af06a191ff2267bca9ae56",
             "id": 1,
@@ -618,7 +617,7 @@
         "name": "Resources",
         "type": "timeseries",
         "uid": "W7B1EKA7k",
-        "version": 3
+        "version": 4
       },
       "options": {
         "legend": {
@@ -638,7 +637,7 @@
             "uid": "TMYKpd07k"
           },
           "exemplar": true,
-          "expr": "rate(process_cpu_seconds_total{instance=\"${instance}\"}[$__rate_interval]) * 100",
+          "expr": "rate(process_cpu_seconds_total{instance=\"localhost:8008\"}[$__rate_interval]) * 100",
           "interval": "",
           "legendFormat": "CPU usage %",
           "refId": "A"
@@ -649,7 +648,7 @@
             "uid": "TMYKpd07k"
           },
           "exemplar": true,
-          "expr": "process_open_fds{instance=\"${instance}\"}",
+          "expr": "process_open_fds{instance=\"localhost:8008\"}",
           "interval": "",
           "legendFormat": "open file descriptors",
           "refId": "C"
@@ -660,7 +659,7 @@
             "uid": "TMYKpd07k"
           },
           "exemplar": true,
-          "expr": "process_resident_memory_bytes{instance=\"${instance}\"}",
+          "expr": "process_resident_memory_bytes{instance=\"localhost:8008\"}",
           "interval": "",
           "legendFormat": "RSS",
           "refId": "D"
@@ -671,7 +670,7 @@
             "uid": "TMYKpd07k"
           },
           "exemplar": true,
-          "expr": "nim_gc_mem_bytes{instance=\"${instance}\"}",
+          "expr": "nim_gc_mem_bytes{instance=\"localhost:8008\"}",
           "interval": "",
           "legendFormat": "Nim GC mem total",
           "refId": "F"
@@ -682,7 +681,7 @@
             "uid": "TMYKpd07k"
           },
           "exemplar": true,
-          "expr": "nim_gc_mem_occupied_bytes{instance=\"${instance}\"}",
+          "expr": "nim_gc_mem_occupied_bytes{instance=\"localhost:8008\"}",
           "interval": "",
           "legendFormat": "Nim GC mem used",
           "refId": "G"
@@ -697,30 +696,7 @@
   "style": "dark",
   "tags": [],
   "templating": {
-    "list": [
-      {
-        "current": {
-          "selected": false,
-          "text": "localhost:8008",
-          "value": "localhost:8008"
-        },
-        "definition": "",
-        "hide": 0,
-        "includeAll": false,
-        "multi": false,
-        "name": "instance",
-        "options": [],
-        "query": {
-          "query": "",
-          "refId": "Prometheus-instance-Variable-Query"
-        },
-        "refresh": 1,
-        "regex": "",
-        "skipUrlSync": false,
-        "sort": 0,
-        "type": "query"
-      }
-    ]
+    "list": []
   },
   "time": {
     "from": "now-6h",
@@ -730,6 +706,6 @@
   "timezone": "",
   "title": "ETH2 Sync Data",
   "uid": "JqRBLK07k",
-  "version": 15,
+  "version": 16,
   "weekStart": ""
 }
