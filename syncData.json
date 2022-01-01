@@ -122,25 +122,17 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "mode": "continuous-GrYlRd"
           },
           "decimals": 2,
           "mappings": [],
+          "max": 48,
           "min": 0,
           "thresholds": {
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "#EAB839",
-                "value": 12
-              },
-              {
-                "color": "red",
-                "value": 24
+                "color": "green"
               }
             ]
           },
@@ -156,7 +148,6 @@
       },
       "id": 4,
       "libraryPanel": {
-        "description": "",
         "meta": {
           "connectedDashboards": 2,
           "created": "2021-12-31T18:50:34Z",
@@ -165,9 +156,9 @@
             "id": 1,
             "name": "admin"
           },
-          "folderName": "General",
+          "folderName": "",
           "folderUid": "",
-          "updated": "2021-12-31T19:20:40Z",
+          "updated": "2022-01-01T04:53:31.832933169Z",
           "updatedBy": {
             "avatarUrl": "/avatar/46d229b033af06a191ff2267bca9ae56",
             "id": 1,
@@ -175,9 +166,8 @@
           }
         },
         "name": "Time Left to Sync",
-        "type": "stat",
         "uid": "ROCAYF0nz",
-        "version": 4
+        "version": 6
       },
       "options": {
         "colorMode": "value",
@@ -216,7 +206,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "palette-classic"
+            "mode": "continuous-RdYlGr"
           },
           "custom": {
             "axisLabel": "",
@@ -224,7 +214,7 @@
             "barAlignment": 0,
             "drawStyle": "line",
             "fillOpacity": 0,
-            "gradientMode": "none",
+            "gradientMode": "scheme",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
@@ -699,13 +689,13 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-5m",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "ETH2 Sync Data",
   "uid": "JqRBLK07k",
-  "version": 16,
+  "version": 17,
   "weekStart": ""
 }
