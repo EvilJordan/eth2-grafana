@@ -3,7 +3,7 @@ ETH2 Grafana Dashboards (Nimbus)
 
 My humble attempt at figuring out/creating Grafana dashboards to expose Ethereum Beacon Chain metrics.
 
-🚨 I HAVE NO IDEA WHAT I'M DOING 🚨
+🚨 I HAVE ~~NO IDEA~~ SOME SEMBLANCE OF WHAT I'M DOING 🚨
 
 ---
 
